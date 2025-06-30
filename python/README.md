@@ -83,20 +83,10 @@ Identify and fix any performance bottlenecks or logic errors in the application 
 - `DELETE /employees/<id>` - Delete an employee by ID
 - `PUT /employees/<id>` - Update an employee by ID
 
+
 ## Testing Your Fixes with curl
 
-### Get All Employees
-```sh
-curl -X GET http://localhost:5000/employees
-```
-
-### Get Employee by ID
-```sh
-curl -X GET http://localhost:5000/employees/{id}
-```
-Replace `{id}` with the actual employee ID.
-
-### Create a New Employee
+### 1. Create a New Employee
 ```sh
 curl -X POST http://localhost:5000/employees -H "Content-Type: application/json" -d '{
   "name": "John Doe",
@@ -105,7 +95,18 @@ curl -X POST http://localhost:5000/employees -H "Content-Type: application/json"
 }'
 ```
 
-### Update an Existing Employee
+### 2. Get All Employees
+```sh
+curl -X GET http://localhost:5000/employees
+```
+
+### 3. Get Employee by ID
+```sh
+curl -X GET http://localhost:5000/employees/{id}
+```
+Replace `{id}` with the actual employee ID.
+
+### 4. Update an Existing Employee
 ```sh
 curl -X PUT http://localhost:5000/employees/{id} -H "Content-Type: application/json" -d '{
   "name": "Jane Doe",
@@ -115,7 +116,7 @@ curl -X PUT http://localhost:5000/employees/{id} -H "Content-Type: application/j
 ```
 Replace `{id}` with the actual employee ID.
 
-### Delete an Employee
+### 5. Delete an Employee
 ```sh
 curl -X DELETE http://localhost:5000/employees/{id}
 ```
