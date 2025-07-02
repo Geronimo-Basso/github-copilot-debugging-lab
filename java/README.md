@@ -1,6 +1,7 @@
-# GitHub copilot troubleshooying and documentation lab
 
-This repository contains a collection of challenges to improve your skills with GitHub Copilot regarding troubleshooting, documentation and related topics.
+# GitHub Copilot Troubleshooting Lab Java
+
+This repository contains a collection of challenges to improve your skills with GitHub Copilot regarding troubleshooting and debugging.
 
 ## Pre-requisites
 
@@ -16,11 +17,10 @@ This repository contains a collection of challenges to improve your skills with 
 
 ## Challenges
 
+
 ### Understand the API
 
-    This challenge is about understanding the API that you are going to test. You will need to document the API and understand the endpoints, request and response payloads, and the expected behavior of the API. Create also examples of curl commands to interact with the API.
-
-    The output should be a markdown file with the API documentation.
+    This challenge is about understanding the API that you are going to test. You will need to understand the endpoints, request and response payloads, and the expected behavior of the API. Create also examples of curl commands to interact with the API.
 
 ### Debug and solve compile errors
 
@@ -32,45 +32,12 @@ This repository contains a collection of challenges to improve your skills with 
 
     Once application fully compiles you need to test all the endpoints and fix any functional errors that you find.
 
-**Swagger**
-
-    Add Swagger to the project to document the API and test it.
 
 **Testing**
 
     Review the test cases and add new ones if necessary. Make sure that all the test cases pass.
-
-**Code Documentation**
-
-    Docuemnt all clases and methods with the necessary information to understand the code.
-
-**Documentation**
-
-    Update the API documentation with the new information. Generate two different markdown files on with the functional documentation and another with the technical documentation.
-
-
-**Bonus**
-  
-    Translate the code to another languaje of your choice and test it.
     
-
-### Customize instructions
-
-
-
-
 # Testing Employee API with curl
-
-## Get All Employees
-```sh
-curl -X GET http://localhost:8080/api/employees
-```
-
-## Get Employee by ID
-```sh
-curl -X GET http://localhost:8080/api/employees/{id}
-```
-Replace `{id}` with the actual employee ID.
 
 ## Create a New Employee
 ```sh
@@ -96,4 +63,14 @@ Replace `{id}` with the actual employee ID.
 curl -X DELETE http://localhost:8080/api/employees/{id}
 ```
 Replace `{id}` with the actual employee ID.
+
+## Get All Employees
+```sh
+curl -X GET http://localhost:8080/api/employees
 ```
+
+## Get Employee by ID
+```sh
+curl -X GET http://localhost:8080/api/employees/{id}
+```
+Replace `{id}` with the actual employee ID.
